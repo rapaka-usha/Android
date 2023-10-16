@@ -20,8 +20,6 @@ public class MainActivity extends AppCompatActivity {
         sms = (Button) findViewById(R.id.b2);
         website = (Button) findViewById(R.id.b3);
         phone.setOnClickListener(new View.OnClickListener() {
-
-
             @Override
             public void onClick(View view) {
                 i.setAction(Intent.ACTION_DIAL);
