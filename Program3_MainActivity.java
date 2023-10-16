@@ -1,7 +1,6 @@
 package com.cmrit.tostapp;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
