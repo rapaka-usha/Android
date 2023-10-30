@@ -3,12 +3,13 @@ package com.example.signupapplication;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 import java.util.regex.Pattern;
+import android.util.Patterns;
+
 public class MainActivity extends AppCompatActivity {
     EditText email_Sign, password_Sign;
     Button signUp_btn;
@@ -24,11 +25,12 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String email = email_Sign.getText().toString();
                 String password = password_Sign.getText().toString();
+
+
                 if(!isValidPassword(password)) {
                     Toast.makeText(MainActivity.this,"Password doesn't match rules",Toast.LENGTH_SHORT).show();
                     return;
                 }
-
                 Intent intent = new Intent(MainActivity.this, RegisterSuccessActivity.class);
                 intent.putExtra("email",email);
                 intent.putExtra("password",password);
@@ -54,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
         if(!lowerCase.matcher(password).matches()) {
             return false;
         }
+
         if(!upperCase.matcher(password).matches()) {
             return false;
         }
