@@ -20,9 +20,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity  android:name="com.cmrit.fifth.loginActivity" />
-        <activity  android:name="com.cmrit.fifth.RegisterSuccessActivity" />
-        <activity android:name="com.cmrit.fifth.welcomeActivity"/>
+        <activity  android:name=" com.example.signupapplication.loginActivity" />
+        <activity  android:name=" com.example.signupapplication.RegisterSuccessActivity" />
+        <activity android:name=" com.example.signupapplication.welcomeActivity"/>
 
     </application>
 
