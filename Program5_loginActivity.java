@@ -14,6 +14,7 @@ public class loginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_login);
         emailEditText=(EditText)findViewById(R.id.EmaileditText);
         passwordEditText=(EditText)findViewById(R.id.passEditText);
@@ -25,7 +26,6 @@ public class loginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String email = emailEditText.getText().toString();
                 String password = passwordEditText.getText().toString();
-
                 if(registeredEmail.equals(email) && registeredPassword.equals(password))
                 {
                     Intent intent= new Intent(loginActivity.this, welcomeActivity.class);
@@ -43,5 +43,3 @@ public class loginActivity extends AppCompatActivity {
         });
     }
 }
-
-
