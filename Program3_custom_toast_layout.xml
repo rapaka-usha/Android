@@ -20,7 +20,7 @@
         android:layout_marginLeft="11dp"
         android:text="Toast Message"
         android:textColor="#fff"
-        android:textSize="2sp"
+        android:textSize="30sp"
         android:textStyle="bold" />
 
 </LinearLayout>
